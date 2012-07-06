@@ -12,12 +12,11 @@
 	<string>http://creativecommons.org/licenses/by-sa/3.0/</string>
 	<key>settings</key>
 	<array>
-
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#242424</string>
+				<string>#222</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
@@ -82,7 +81,18 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Built-in constant</string>
+			<string>Number, complex</string>
+			<key>scope</key>
+			<string>constant.numeric.complex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff435b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Built-in constant (e.g. True, None)</string>
 			<key>scope</key>
 			<string>constant.language</string>
 			<key>settings</key>
@@ -97,7 +107,7 @@
 			<key>name</key>
 			<string>User-defined constant</string>
 			<key>scope</key>
-			<string>constant.character, constant.other</string>
+			<string>constant.character, constant.other, variable.other.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -125,9 +135,37 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#d458b3</string>
+				<string>#c15ea6</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ruby's |block| var</string>
+			<key>scope</key>
+			<string>variable.other.block</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#c1b05e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ruby's readwrite stuff, like @something</string>
+			<key>scope</key>
+			<string>variable.other.readwrite.instance, variable.other.readwrite.global</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ffee48</string>
+			</dict>
+		</dict>
+
+
 
 		<dict>
 			<key>name</key>
@@ -285,7 +323,7 @@
 			<key>name</key>
 			<string>Function call</string>
 			<key>scope</key>
-			<string>meta.function-call</string>
+			<string>meta.function-call - meta.function-call.arguments, entity.name.function.decorator</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -309,13 +347,15 @@
 			<key>name</key>
 			<string>Function argument</string>
 			<key>scope</key>
-			<string>variable.parameter</string>
+			<string>variable.parameter, meta.function.decorator.arguments</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f2c597</string>
+				<string>#f2e897</string>
 			</dict>
 		</dict>
+		
+
 		<dict>
 			<key>name</key>
 			<string>Tag name</string>
@@ -451,6 +491,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>String embedded-source</string>
+			<key>scope</key>
+			<string>string punctuation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#486d20</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>String constant</string>
 			<key>scope</key>
 			<string>string constant</string>
@@ -534,6 +585,10 @@
 				<string>#CF6A4C</string>
 			</dict>
 		</dict>
+
+
+
+
 		<dict>
 			<key>name</key>
 			<string>c C/C++ Preprocessor Line</string>
@@ -1064,6 +1119,7 @@
 		    </dict>
 		</dict>
 		<!-- END -->
+
 
 	</array>
 	<key>uuid</key>
