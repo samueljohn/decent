@@ -12,6 +12,7 @@
 	<string>http://creativecommons.org/licenses/by-sa/3.0/</string>
 	<key>settings</key>
 	<array>
+
 		<dict>
 			<key>settings</key>
 			<dict>
@@ -24,7 +25,7 @@
 				<key>invisibles</key>
 				<string>#A8A8A8</string>
 				<key>lineHighlight</key>
-				<string>#2D2D2D</string>
+				<string>#00000050</string>
 				<key>selection</key>
 				<string>#5d4878</string>
 				<key>bracketsForeground</key>
@@ -57,33 +58,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Foreground</string>
-			<key>scope</key>
-			<string>keyword.operator.class, source.php.embedded.line</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#CED1CF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Line-number directives</string>
-			<key>scope</key>
-			<string>keyword.other.directive.line-number</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, meta.tag.preprocessor.xml string, punctuation.definition.string, markup.quote.markdown, string.other.link.description</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -131,18 +108,16 @@
 			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
-			<string>variable.parameter, punctuation.section.embedded</string>
+			<string>variable.language</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#f3deb9</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable</string>
+			<string>Variable other</string>
 			<key>scope</key>
 			<string>variable.other</string>
 			<key>settings</key>
@@ -150,7 +125,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#de89da</string>
+				<string>#d458b3</string>
 			</dict>
 		</dict>
 
@@ -221,31 +196,31 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Floating-point infix operators</string>
+			<string>Operators: "or", "and", "in" </string>
 			<key>scope</key>
-			<string>source.ocaml keyword.operator.symbol.infix.floating-point</string>
+			<string>keyword.operator.logical</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>underline</string>
+				<string>italic bold</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Floating-point prefix operators</string>
+			<string>Punctuation</string>
 			<key>scope</key>
-			<string>source.ocaml keyword.operator.symbol.prefix.floating-point</string>
+			<string>punctuation.separator</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
+				<key>foreground</key>
+				<string>#a9bac4</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Storage Types</string>
 			<key>scope</key>
-			<string>storage, storage.type, entity.name.tag.css</string>
+			<string>storage.type, entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -274,8 +249,10 @@
 			<string>storage</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#F92672</string>
+				<string>#b8788f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -335,8 +312,8 @@
 			<string>variable.parameter</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>foreground</key>
+				<string>#f2c597</string>
 			</dict>
 		</dict>
 		<dict>
@@ -358,7 +335,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CAE682</string>
+				<string>#7d9ac0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -376,7 +353,7 @@
 			<key>name</key>
 			<string>Special methods</string>
 			<key>scope</key>
-			<string>keyword.other.special-method</string>
+			<string>keyword.other.special-method, meta.link.inet</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -387,16 +364,18 @@
 			<key>name</key>
 			<string>Variable (especially Python's self)</string>
 			<key>scope</key>
-			<string>variable</string>
+			<string>variable.language</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#d0a558</string>
+				<string>#d8c1e4</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library variable</string>
+			<string>support variable</string>
 			<key>scope</key>
 			<string>support.variable</string>
 			<key>settings</key>
@@ -405,19 +384,18 @@
 				<string>#93c4e7</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
-			<string>Support variable. Don't know where this is used.</string>
+			<string>execute string (ruby)</string>
 			<key>scope</key>
-			<string>support.other.variable</string>
+			<string>string.interpolated.ruby</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF0000</string>
+				<string>#f63538</string>
 			</dict>
 		</dict>
-
-
 
 		<dict>
 			<key>name</key>
@@ -460,15 +438,15 @@
 			<key>name</key>
 			<string>String embedded-source</string>
 			<key>scope</key>
-			<string>string source</string>
+			<string>string source, meta.image.inline.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#6F8BBA26</string>
+				<string>#0f0f0f</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#E6E3D8</string>
+				<string>#F8F8F8</string>
 			</dict>
 		</dict>
 		<dict>
@@ -497,26 +475,15 @@
 				<string>#9B859D</string>
 			</dict>
 		</dict>
-				<dict>
+		<dict>
 			<key>name</key>
-			<string>♦ Embedded Source</string>
+			<string>Embedded Source</string>
 			<key>scope</key>
 			<string>text source</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#B0B3BA14</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>♦ Embedded Source (Bright)</string>
-			<key>scope</key>
-			<string>text.html.ruby source</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#B1B3BA21</string>
+				<string>#0f0f0f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -528,43 +495,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#60e1b5</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>♦ String embedded-source</string>
-			<key>scope</key>
-			<string>string source</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#DAEFA3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>♦ String.regexp</string>
-			<key>scope</key>
-			<string>string.regexp</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#E9C062</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>♦ String.regexp.«special»</string>
-			<key>scope</key>
-			<string>string.regexp constant.character.escape, string.regexp source.ruby.embedded, string.regexp string.regexp.arbitrary-repitition</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#CF7D34</string>
 			</dict>
 		</dict>
 		<dict>
@@ -619,7 +549,7 @@
 			<key>name</key>
 			<string>c C/C++ Preprocessor Directive</string>
 			<key>scope</key>
-			<string>meta.preprocessor.c keyword</string>
+			<string>meta.preprocessor.c keyword, meta.require</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -630,7 +560,7 @@
 			<key>name</key>
 			<string>✘ Doctype/XML Processing</string>
 			<key>scope</key>
-			<string>meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string</string>
+			<string>meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -641,7 +571,7 @@
 			<key>name</key>
 			<string>✘ Meta.tag.«all»</string>
 			<key>scope</key>
-			<string>declaration.tag, declaration.tag entity, meta.tag, meta.tag entity, string.other.link</string>
+			<string>declaration.tag, declaration.tag entity, meta.tag, meta.tag entity</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -666,8 +596,10 @@
 			<string>meta.selector.css entity.name.tag, entity.name.tag</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
 				<key>foreground</key>
-				<string>#588ebe</string>
+				<string>#e4c793</string>
 			</dict>
 		</dict>
 		<dict>
@@ -816,7 +748,7 @@
 			<key>name</key>
 			<string>Markup: List</string>
 			<key>scope</key>
-			<string>markup.list</string>
+			<string>markup.list, punctuation.definition.list_item.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -831,16 +763,18 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>bold italic</string>
 				<key>foreground</key>
-				<string>#CF6A4C</string>
+				<string>#ffffff</string>
+				<key>background</key>
+		        <string>#333</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>String, Symbols, Inherited Class, Markup Heading</string>
+			<string>Inherited Class</string>
 			<key>scope</key>
-			<string>entity.other.inherited-class, markup.heading</string>
+			<string>entity.other.inherited-class</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -974,8 +908,165 @@
 		        <string>#cc5710</string>
 		    </dict>
 		</dict>
+
+		<!-- Regular expressions  -->
+		<dict>
+			<key>name</key>
+			<string>String.regexp</string>
+			<key>scope</key>
+			<string>string.regexp</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#9e60f7</string>
+			</dict>
+		</dict>
+		<dict>
+		    <key>name</key>
+		    <string>keyword.control.set.regexp</string>
+		    <key>scope</key>
+		    <string>keyword.operator.quantifier.regexp</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string>bold</string>
+		    </dict>
+		</dict>
+		<dict>
+		    <key>name</key>
+		    <string>Regex Group</string>
+		    <key>scope</key>
+		    <string>string.regexp.group</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>background</key>
+		        <string>#4e4343</string>
+		    </dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String.regexp.«special»</string>
+			<key>scope</key>
+			<string>string.regexp.arbitrary-repitition, constant.other.range.regexp, keyword.operator.intersection.regexp, constant.other.assertion.regexp, keyword.other.backref-and-recursion.regexp, constant.character.escape.regexp, constant.character.escape.regexp</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00FFFF</string>
+			</dict>
+		</dict>
+		
+		<!-- ocaml stuff -->
+		<dict>
+			<key>name</key>
+			<string>Floating-point infix operators</string>
+			<key>scope</key>
+			<string>source.ocaml keyword.operator.symbol.infix.floating-point</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Floating-point prefix operators</string>
+			<key>scope</key>
+			<string>source.ocaml keyword.operator.symbol.prefix.floating-point</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+			</dict>
+		</dict>
+
+		<!-- Markdown/Multimarkdown -->
+		<dict>
+			<key>name</key>
+			<string>Markdown link descr. text</string>
+			<key>scope</key>
+			<string>string.other.link</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+		        <key>foreground</key>
+		        <string>#ca93dd</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown italic</string>
+			<key>scope</key>
+			<string>markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown bold</string>
+			<key>scope</key>
+			<string>markup.bold</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown underline</string>
+			<key>scope</key>
+			<string>markup.underline</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown markup symbols (make them darker)</string>
+			<key>scope</key>
+			<string>text.html.markdown punctuation.definition, punctuation.definition.bold, punctuation.definition.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#535353</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown headings</string>
+			<key>scope</key>
+			<string>entity.name.section.markdown, punctuation.definition.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+		        
+			</dict>
+		</dict>
+
+		<dict>
+		    <key>name</key>
+		    <string>Unknown. TODO.</string>
+		    <key>scope</key>
+		    <string>support.other.variable</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>background</key>
+		        <string>#0000FF</string>
+		    </dict>
+		</dict>
+		<!-- END -->
+
 	</array>
 	<key>uuid</key>
-	<string>1238E367-1337-5411-0815-7CE8B09D1789</string>
+	<string>1238E367-1337-5411-0815-6CE8B09D1789</string>
 </dict>
 </plist>
