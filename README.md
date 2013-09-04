@@ -2,7 +2,7 @@ decent
 ======
 
 A decent color scheme for Sublime Text 2/3.
-Tailored for Python, CSS, Markdonw and Ruby. And regexp. highlighting. And more.
+Tailored for Python, CSS, Markdown and Ruby. And regexp. highlighting. And more.
 
 ![](screenshot.png)
 
