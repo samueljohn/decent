@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<!--
+
+Hint: In SublimeText, press super+alt+p to see the current scope
+
+Todo:
+*   More and better description of what the scopes actually color
+*   Remove redundant styles and cleanup
+*   Specifying the colors "guide", "activeGuide" and "stackGuide"
+
+-->
 <dict>
 	<key>author</key>
-	<string>Samuel John</string>
+	<string>Samuel John (www.SamuelJohn.de)</string>
 	<key>name</key>
 	<string>Samuel's decent</string>
 	<key>homepage</key>
-	<string>www.SamuelJohn.de</string>
+	<string>https://github.com/samueljohn/decent</string>
 	<key>license</key>
 	<string>http://creativecommons.org/licenses/by-sa/3.0/</string>
 	<key>settings</key>
@@ -20,7 +30,7 @@
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
-				<string>#F6F3E8</string>
+				<string>#e1dfd4</string>
 				<key>invisibles</key>
 				<string>#A8A8A8</string>
 				<key>lineHighlight</key>
@@ -31,6 +41,19 @@
 				<string>#d1cdf4</string>
 			</dict>
 		</dict>
+		<dict>
+            <key>name</key>
+            <string>Block Cursor</string>
+            <key>scope</key>
+            <string>block_cursor</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#212121</string>
+                <key>background</key>
+                <string>#00bdff77</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -59,13 +82,13 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string, meta.tag.preprocessor.xml string, punctuation.definition.string, markup.quote.markdown, string.other.link.description</string>
+			<string>string.quoted, string.unquoted, string.other.link, meta.tag.preprocessor.xml string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#80e47e</string>
+				<string>#a2e475</string>
 			</dict>
 		</dict>
 		<dict>
@@ -140,22 +163,22 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Ruby's |block| var</string>
+			<string>Ruby's |block| and @variable</string>
 			<key>scope</key>
-			<string>variable.other.block</string>
+			<string>variable.other.block, variable.other.readwrite.instance</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#c1b05e</string>
+				<string>#c5b748</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Ruby's readwrite stuff, like @something</string>
+			<string>Global constants</string>
 			<key>scope</key>
-			<string>variable.other.readwrite.instance, variable.other.readwrite.global</string>
+			<string>variable.other.readwrite.global, constant.other.placeholder</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -256,9 +279,20 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Storage Types</string>
+			<string>String end/start (i.e. the quote symbols)</string>
 			<key>scope</key>
-			<string>storage.type, entity.name.tag.css</string>
+			<string>punctuation.definition.string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#46a45e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage Types like classes</string>
+			<key>scope</key>
+			<string>storage.type, keyword.control.class, keyword.control.def, entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -319,11 +353,27 @@
 				<string>#ee8821</string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Function name</string>
+			<key>scope</key>
+			<string>entity.name.function support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold italic</string>
+				<key>foreground</key>
+				<string>#ee8821</string>
+			</dict>
+		</dict>
+
+
 		<dict>
 			<key>name</key>
 			<string>Function call</string>
 			<key>scope</key>
-			<string>meta.function-call - meta.function-call.arguments, entity.name.function.decorator</string>
+			<string>meta.function-call - meta.function-call.arguments, entity.name.function.decorator, punctuation.section.function, punctuation.definition.parameters</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -354,8 +404,6 @@
 				<string>#f2e897</string>
 			</dict>
 		</dict>
-		
-
 		<dict>
 			<key>name</key>
 			<string>Tag name</string>
@@ -380,24 +428,39 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library class/type</string>
+			<string>Language included things.</string>
 			<key>scope</key>
-			<string>support.type, support.class</string>
+			<string>support.type</string>
 			<key>settings</key>
 			<dict>
-				<key>foreground</key>
-				<string>#eeaa39</string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Special methods</string>
+			<string>Special methods and markdown links</string>
 			<key>scope</key>
-			<string>keyword.other.special-method, meta.link.inet</string>
+			<string>keyword.other.special-method, meta.link.inet, meta.link.reference</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#ae97f2</string>
+				<string>#f2c597</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown link soucre [title](source)</string>
+			<key>scope</key>
+			<string>meta.link.inline.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#4e4e4e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -469,16 +532,14 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#562D56BF</string>
-				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#FF1111BB</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>String embedded-source</string>
 			<key>scope</key>
-			<string>string source, meta.image.inline.markdown</string>
+			<string>string source, meta.image.inline</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -489,6 +550,17 @@
 				<string>#F8F8F8</string>
 			</dict>
 		</dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown Raw</string>
+            <key>scope</key>
+            <string>markup.raw.block.markdown, markup.raw.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#2e2e2e</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>name</key>
 			<string>String embedded-source</string>
@@ -515,19 +587,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Support</string>
-			<key>scope</key>
-			<string>support</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#9B859D</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Embedded Source</string>
 			<key>scope</key>
 			<string>text source</string>
@@ -545,7 +604,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#60e1b5</string>
+				<string>#d96565</string>
 			</dict>
 		</dict>
 		<dict>
@@ -567,9 +626,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#d8c1e4</string>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -760,6 +817,7 @@
 				<string>#F8F8F8</string>
 			</dict>
 		</dict>
+		<!-- GitGutter uses markup.deleted, markup.inserted, markup.changed highlights -->
 		<dict>
 			<key>name</key>
 			<string>⎇ diff.deleted</string>
@@ -770,7 +828,7 @@
 				<key>background</key>
 				<string>#420E09</string>
 				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#C92652</string>
 			</dict>
 		</dict>
 		<dict>
@@ -783,7 +841,7 @@
 				<key>background</key>
 				<string>#4A410D</string>
 				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#967EFB</string>
 			</dict>
 		</dict>
 		<dict>
@@ -796,7 +854,7 @@
 				<key>background</key>
 				<string>#253B22</string>
 				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#A6E22E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -807,7 +865,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F9EE98</string>
+				<string>#ede8cd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -829,17 +887,14 @@
 			<key>name</key>
 			<string>Inherited Class</string>
 			<key>scope</key>
-			<string>entity.other.inherited-class</string>
+			<string>entity.other.inherited-class, support.type.exception</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#e1c760</string>
 			</dict>
 		</dict>
 
-		
 		<!-- Git highlights -->
 	 	<dict>
 	        <key>name</key>
@@ -911,7 +966,7 @@
 		    <string>sublimelinter.underline.illegal</string>
 		    <key>settings</key>
 		    <dict>
-		        <key>background</key>
+		        <key>backround</key>
 		        <string>#FF0000</string>
 		    </dict>
 		</dict>
@@ -924,8 +979,6 @@
 		    <dict>
 		        <key>background</key>
 		        <string>#DF940044</string>
-		        <key>foreground</key>
-		        <string>#a8a800</string>
 		    </dict>
 		</dict>
 		<dict>
@@ -935,7 +988,7 @@
 		    <string>sublimelinter.underline.warning</string>
 		    <key>settings</key>
 		    <dict>
-		        <key>background</key>
+		        <key>foreground</key>
 		        <string>#ffff6199</string>
 		    </dict>
 		</dict>
@@ -1011,7 +1064,7 @@
 				<string>#00FFFF</string>
 			</dict>
 		</dict>
-		
+
 		<!-- ocaml stuff -->
 		<dict>
 			<key>name</key>
@@ -1039,15 +1092,13 @@
 		<!-- Markdown/Multimarkdown -->
 		<dict>
 			<key>name</key>
-			<string>Markdown link descr. text</string>
+			<string>Markdown paragraph text</string>
 			<key>scope</key>
-			<string>string.other.link</string>
+			<string>meta.paragraph.markdown</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-		        <key>foreground</key>
-		        <string>#ca93dd</string>
+				<key>foreground</key>
+				<string>#c8c6bd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1096,20 +1147,34 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown headings</string>
+			<string>Markup headings</string>
 			<key>scope</key>
 			<string>entity.name.section.markdown, punctuation.definition.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
-		        
+				<string>#ddd</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown quotes</string>
+			<key>scope</key>
+			<string>markup.quote.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#777787</string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 
+
+
 		<dict>
 		    <key>name</key>
-		    <string>Unknown. TODO.</string>
+		    <string>Unused/Un-themed. TODO.</string>
 		    <key>scope</key>
 		    <string>support.other.variable</string>
 		    <key>settings</key>
@@ -1118,6 +1183,7 @@
 		        <string>#0000FF</string>
 		    </dict>
 		</dict>
+
 		<!-- END -->
 
 
