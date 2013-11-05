@@ -42,18 +42,18 @@ Todo:
 			</dict>
 		</dict>
 		<dict>
-            <key>name</key>
-            <string>Block Cursor</string>
-            <key>scope</key>
-            <string>block_cursor</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#212121</string>
-                <key>background</key>
-                <string>#00bdff77</string>
-            </dict>
-        </dict>
+			<key>name</key>
+			<string>Block Cursor</string>
+			<key>scope</key>
+			<string>block_cursor</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#212121</string>
+				<key>background</key>
+				<string>#00bdff77</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -550,17 +550,17 @@ Todo:
 				<string>#F8F8F8</string>
 			</dict>
 		</dict>
-        <dict>
-            <key>name</key>
-            <string>Markdown Raw</string>
-            <key>scope</key>
-            <string>markup.raw.block.markdown, markup.raw.inline.markdown</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#2e2e2e</string>
-            </dict>
-        </dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Raw</string>
+			<key>scope</key>
+			<string>markup.raw.block.markdown, markup.raw.inline.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2e2e2e</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>name</key>
 			<string>String embedded-source</string>
@@ -880,7 +880,7 @@ Todo:
 				<key>foreground</key>
 				<string>#ffffff</string>
 				<key>background</key>
-		        <string>#333</string>
+				<string>#333</string>
 			</dict>
 		</dict>
 		<dict>
@@ -896,125 +896,125 @@ Todo:
 		</dict>
 
 		<!-- Git highlights -->
-	 	<dict>
-	        <key>name</key>
-	        <string>Git Modified Line</string>
-	        <key>scope</key>
-	        <string>git.changes.x</string>
-	        <key>settings</key>
-	        <dict>
-	            <key>background</key>
-	            <string>#272852</string>
-	        </dict>
-	    </dict>
-	    <dict>
-	        <key>name</key>
-	        <string>Git Added Line</string>
-	        <key>scope</key>
-	        <string>git.changes.+</string>
-	        <key>settings</key>
-	        <dict>
-	            <key>background</key>
-	            <string>#275822</string>
-	        </dict>
-	    </dict>
-	    <dict>
-	        <key>name</key>
-	        <string>Git Remove Line</string>
-	        <key>scope</key>
-	        <string>git.changes.-</string>
-	        <key>settings</key>
-	        <dict>
-	            <key>background</key>
-	            <string>#A72822</string>
-	        </dict>
-	    </dict>
+		<dict>
+			<key>name</key>
+			<string>Git Modified Line</string>
+			<key>scope</key>
+			<string>git.changes.x</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#272852</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Git Added Line</string>
+			<key>scope</key>
+			<string>git.changes.+</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#275822</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Git Remove Line</string>
+			<key>scope</key>
+			<string>git.changes.-</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#A72822</string>
+			</dict>
+		</dict>
 
 		<!-- Sublimelinter colors -->
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Annotations</string>
-		    <key>scope</key>
-		    <string>sublimelinter.annotations</string>
-		    <key>settings</key>
-		    <dict>
-		    	<key>fontStyle</key>
+			<key>name</key>
+			<string>SublimeLinter Annotations</string>
+			<key>scope</key>
+			<string>sublimelinter.annotations</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
 				<string>italic</string>
-		    	<key>background</key>
-		        <string>#000000</string>
-		        <key>foreground</key>
-		        <string>#ffffa5</string>
-		    </dict>
+				<key>background</key>
+				<string>#000000</string>
+				<key>foreground</key>
+				<string>#ffffa5</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Error Outline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.outline.illegal</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#FF4A5299</string>
-		        <key>foreground</key>
-		        <string>#FF0000</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Error Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FF4A5299</string>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Error Underline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.underline.illegal</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>backround</key>
-		        <string>#FF0000</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Error Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>backround</key>
+				<string>#FF0000</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Warning Outline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.outline.warning</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#DF940044</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Warning Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#DF940044</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Warning Underline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.underline.warning</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>foreground</key>
-		        <string>#ffff6199</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Warning Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffff6199</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Violation Outline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.outline.violation</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#955710</string>
-		        <key>foreground</key>
-		        <string>#955710</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Violation Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.violation</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#955710</string>
+				<key>foreground</key>
+				<string>#955710</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>SublimeLinter Violation Underline</string>
-		    <key>scope</key>
-		    <string>sublimelinter.underline.violation</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#cc5710</string>
-		    </dict>
+			<key>name</key>
+			<string>SublimeLinter Violation Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.violation</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#cc5710</string>
+			</dict>
 		</dict>
 
 		<!-- Regular expressions  -->
@@ -1032,26 +1032,26 @@ Todo:
 			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>keyword.control.set.regexp</string>
-		    <key>scope</key>
-		    <string>keyword.operator.quantifier.regexp</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>fontStyle</key>
-		        <string>bold</string>
-		    </dict>
+			<key>name</key>
+			<string>keyword.control.set.regexp</string>
+			<key>scope</key>
+			<string>keyword.operator.quantifier.regexp</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
-		    <string>Regex Group</string>
-		    <key>scope</key>
-		    <string>string.regexp.group</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#4e4343</string>
-		    </dict>
+			<key>name</key>
+			<string>Regex Group</string>
+			<key>scope</key>
+			<string>string.regexp.group</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4e4343</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -1173,15 +1173,15 @@ Todo:
 
 
 		<dict>
-		    <key>name</key>
-		    <string>Unused/Un-themed. TODO.</string>
-		    <key>scope</key>
-		    <string>support.other.variable</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>background</key>
-		        <string>#0000FF</string>
-		    </dict>
+			<key>name</key>
+			<string>Unused/Un-themed. TODO.</string>
+			<key>scope</key>
+			<string>support.other.variable</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#0000FF</string>
+			</dict>
 		</dict>
 
 		<!-- Anaconda Python linting -->
