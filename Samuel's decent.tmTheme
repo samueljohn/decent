@@ -1184,7 +1184,79 @@ Todo:
 		    </dict>
 		</dict>
 
-		<!-- END -->
+		<!-- Anaconda Python linting -->
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Error Outline</string>
+		  <key>scope</key>
+		  <string>anaconda.outline.illegal</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#a1202c</string>
+			  <key>foreground</key>
+			  <string>#FFFFFF</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Error Underline</string>
+		  <key>scope</key>
+		  <string>anaconda.underline.illegal</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#990000</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Warning Outline</string>
+		  <key>scope</key>
+		  <string>anaconda.outline.warning</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#a76506</string>
+			  <key>foreground</key>
+			  <string>#FFFFFF</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Warning Underline</string>
+		  <key>scope</key>
+		  <string>anaconda.underline.warning</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#664400</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Violation Outline</string>
+		  <key>scope</key>
+		  <string>anaconda.outline.violation</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#ffffff33</string>
+			  <key>foreground</key>
+			  <string>#FFFFFF</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>anaconda Violation Underline</string>
+		  <key>scope</key>
+		  <string>anaconda.underline.violation</string>
+		  <key>settings</key>
+		  <dict>
+			  <key>background</key>
+			  <string>#FF0000</string>
+		  </dict>
+		</dict>
 
 
 	</array>
