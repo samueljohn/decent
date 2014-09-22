@@ -26,7 +26,7 @@ Todo:
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#222</string>
+				<string>#1e1e1e</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
