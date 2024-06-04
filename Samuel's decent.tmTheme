@@ -15,11 +15,11 @@ Todo:
 	<key>author</key>
 	<string>Samuel John (www.SamuelJohn.de)</string>
 	<key>name</key>
-	<string>Samuel's decent</string>
+	<string>donthurtme</string>
 	<key>homepage</key>
-	<string>https://github.com/samueljohn/decent</string>
+	<string>https://github.com/samueljohn/donthurtme</string>
 	<key>license</key>
-	<string>http://creativecommons.org/licenses/by-sa/3.0/</string>
+	<string>http://creativecommons.org/licenses/by-sa/4.0/</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -39,6 +39,10 @@ Todo:
 				<string>#5d4878</string>
 				<key>bracketsForeground</key>
 				<string>#d1cdf4</string>
+                <key>shadow</key>
+                <string>#000000</string>
+                <key>misspelling</key>
+                <string>#ecc3bf</string>
 			</dict>
 		</dict>
 		<dict>
@@ -65,6 +69,8 @@ Todo:
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#99968B</string>
+				<key>background</key>
+				<string>##00FF00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -508,7 +514,7 @@ Todo:
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E62424</string>
+				<string>#73242766</string>
 			</dict>
 		</dict>
 		<dict>
@@ -522,6 +528,8 @@ Todo:
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#D2A8A1</string>
+				<key>background</key>
+				<string>#43442744</string>
 			</dict>
 		</dict>
 		<dict>
@@ -558,7 +566,7 @@ Todo:
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#2e2e2e</string>
+				<string>#0e0e0e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1217,9 +1225,7 @@ Todo:
 		  <key>settings</key>
 		  <dict>
 			  <key>background</key>
-			  <string>#a76506</string>
-			  <key>foreground</key>
-			  <string>#FFFFFF</string>
+			  <string>#432e14</string>
 		  </dict>
 		</dict>
 		<dict>
